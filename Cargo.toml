@@ -10,13 +10,14 @@ license = "Apache-2.0"
 edition = "2018"
 
 [dependencies]
+serde = "1.0.117"
 thiserror = "1.0.37"
-serde = { version = "1.0.117", features = ["derive"] }
 
 [dev-dependencies]
-criterion = "0.3.3"
 proptest = "0.10.1"
-proptest-derive = "0.2.0"
+criterion = "0.7.0"
+proptest-derive = "0.7.0"
+serde = { version = "1.0.117", features = ["derive"] }
 
 [[bench]]
 name = "bcs_bench"
